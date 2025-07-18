@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerar Mini Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerador de MiniSite</title>
   <style>
     body {
       background-color: #0d1b2a;
-      color: #ffffff;
+      color: #fff;
       font-family: Arial, sans-serif;
       padding: 20px;
     }
@@ -50,13 +49,13 @@
   </style>
 </head>
 <body>
-  <form action="https://seusite.netlify.app/.netlify/functions/gerar" method="POST">
+  <form action="https://SEU_BACKEND.netlify.app/.netlify/functions/gerar" method="POST">
     <h2>Gerar MiniSite Personalizado</h2>
     <label for="titulo">Título do Serviço</label>
     <input type="text" id="titulo" name="titulo" placeholder="Ex: Pintura Residencial" required>
 
     <label for="descricao">Descrição Curta (até 2 linhas)</label>
-    <textarea id="descricao" name="descricao" rows="3" placeholder="Ex: Qualidade e capricho em cada detalhe. Atendimento em toda a região." required></textarea>
+    <textarea id="descricao" name="descricao" rows="3" placeholder="Ex: Qualidade e capricho em cada detalhe." required></textarea>
 
     <label for="telefone">WhatsApp (somente números com DDD)</label>
     <input type="tel" id="telefone" name="telefone" placeholder="Ex: 48999999999" required>
