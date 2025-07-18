@@ -1,0 +1,1 @@
+// Script auxiliar para publicação automática no Netlify
