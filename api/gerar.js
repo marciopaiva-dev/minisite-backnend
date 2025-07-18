@@ -1,1 +1,1 @@
-
+// Função Serverless da Vercel para gerar MiniSite e proposta
