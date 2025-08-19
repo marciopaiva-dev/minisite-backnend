@@ -1,0 +1,6 @@
+{
+  "name": "netlify-backend",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" }
+}
