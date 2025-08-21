@@ -1,9 +1,10 @@
 const CORS = {
-  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Origin": "https://minisites-servicos.vercel.app", // ← seu domínio
   "Access-Control-Allow-Methods": "GET,OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type",
   "Access-Control-Max-Age": "86400"
 };
+
 
 export async function handler(event) {
   const method = event.httpMethod || "GET";
