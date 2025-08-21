@@ -1,12 +1,15 @@
 // functions/gerar.js — publica um minisite via Netlify Deploy API e retorna a URL final.
 import crypto from "node:crypto";
 
+// topo do arquivo (mantendo o resto igual)
+const ALLOW_ORIGIN = "https://minisites-servicos.vercel.app"; // ← troque para o SEU domínio
 const CORS = {
-  "Access-Control-Allow-Origin": "https://minisites-servicos.vercel.app", // ← seu domínio
-  "Access-Control-Allow-Methods": "GET,OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Origin": ALLOW_ORIGIN,
+  "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization",
   "Access-Control-Max-Age": "86400"
 };
+
 
 
 const json = (code, data) => ({
